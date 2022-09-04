@@ -1,0 +1,50 @@
+header{
+    background-color: var(--colorNaranja);
+    padding: 20px 0 0 0;
+    margin-bottom: 20px;
+}
+
+header .top{
+    max-height: 80px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;/* Se centra en vertical */
+    width: 50%;
+}
+
+header .logo img{
+    padding: 10px;
+    width: 150px;
+}
+
+header .burger{
+    font-size: 30px;
+    padding: 20px 30px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: inline-block;/* Pasa a ser un elemento en linea */
+}
+
+header nav{
+    margin-top: 20px;
+    text-align: center;
+}
+
+header nav ul{
+    padding-bottom: 20px;
+}
+
+header nav ul li{
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+header nav a{
+    color: white;
+}

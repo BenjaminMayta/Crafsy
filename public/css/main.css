@@ -1,0 +1,63 @@
+.home main{
+    width: 98%;
+    margin: 0 auto;
+}
+
+.home main .prooducts_cards {
+    background-color: white;
+    padding: 10px;
+    
+}
+
+.home main .prooducts_cards article{
+    margin: 0 0 30px;
+}
+
+.home main .prooducts_cards article:last-child{
+    margin: 0 0 30px;
+}
+
+.home .prooducts_cards article img{
+    width: 100%; 
+}
+
+.home main .prooducts_cards article h3{
+    margin: 12px 0;
+}
+
+.home main .prooducts_cards article a{
+    background-color: var(--colorNaranja);
+    color: white;
+    padding: 8px;
+    display: inline-block;/* Ya no se pone el ver mas arriba de las palabras */
+    margin-top: 10px;
+}
+
+.home aside{
+    margin-top: 20px;
+}
+
+.home aside section h2{
+    padding: 20px;
+    background-color: white;
+    margin: 10px 0;
+    border: 1px solid var(--colorCeleste2);
+}
+
+.home aside section article{
+    display: flex;
+    flex-wrap: wrap;/* Para que respete el tamaño de sus hijos */
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid var(--colorCeleste2);
+}
+
+.home aside section article p{
+    width: 50%;
+    margin: 0 10px;
+}
+
+.home aside .publicidad img{
+    width: 100%;
+}
