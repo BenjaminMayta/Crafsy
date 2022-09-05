@@ -14,7 +14,7 @@
 }
 
 .home main .prooducts_cards article:last-child{
-    margin: 0 0 30px;
+    margin:0;
 }
 
 .home .prooducts_cards article img{
@@ -60,4 +60,61 @@
 
 .home aside .publicidad img{
     width: 100%;
+}
+
+/* Tablet */
+@media(min-width:426px){
+    .home main .prooducts_cards {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+    
+    .home main .prooducts_cards article{
+        margin: 0 0 20px;
+        width: 48%;
+    }
+
+    .home main .prooducts_cards article:nth-child(5){
+        margin: 0;
+    }/* Al hijo numero 5 le saco los margenes */
+
+    .home main .prooducts_cards article p{
+        font-size: small;
+    }
+
+    .home main aside section .grid{
+        display: grid;/* Grid trabaja con los dos ejes a la vez */
+        grid-template-columns: 49% 49%;
+        grid-gap: 10px;
+    }
+
+    .home aside section article{
+        justify-content: center;
+    }
+
+    .home aside section article p{
+        width: 80%;
+        margin: 10px 10px;
+        text-align: center;
+    }
+
+    .home aside .publicidad h2{
+        width: 100%;
+    }
+
+    .home aside .publicidad{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .home aside .publicidad .publicidad_img{
+        width: 48%;
+    }
+}
+
+/* Desktop */
+@media(min-width:769px){
+
 }
