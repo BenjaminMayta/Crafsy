@@ -13,7 +13,9 @@ a{
     color: black;
 }
 
-.home{
+body{
+    max-width: 1440px;/* Lo maximo que va a crecer el home */
+    margin: 0 auto;
     background-image: url('../images/bg-2.png');
     font-family: var(--fuente);   
 }

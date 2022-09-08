@@ -32,6 +32,7 @@ header .burger{
 }
 
 header nav{
+    display: none;
     margin-top: 20px;
     text-align: center;
 }
@@ -42,9 +43,47 @@ header nav ul{
 
 header nav ul li{
     margin: 20px 0;
-    font-size: 18px;
 }
 
 header nav a{
     color: white;
+    font-size: 18px;
+}
+
+/* Desktop */
+@media(min-width:769px){
+    header{
+        margin-top: 10px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .top{
+        width: 10px;
+    }
+
+    header nav{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header .burger{
+        display: none;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        justify-content:flex-end;
+    }/* Para poner las ul en vertical */
+
+    header nav ul li{
+        padding: 0 10px;
+    }
+
 }

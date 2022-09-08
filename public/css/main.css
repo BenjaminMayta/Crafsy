@@ -22,7 +22,7 @@
 }
 
 .home main .prooducts_cards article h3{
-    margin: 12px 0;
+    margin: 20px 0;
 }
 
 .home main .prooducts_cards article a{
@@ -38,7 +38,7 @@
 }
 
 .home aside section h2{
-    padding: 20px;
+    padding: 10px;
     background-color: white;
     margin: 10px 0;
     border: 1px solid var(--colorCeleste2);
@@ -85,7 +85,7 @@
 
     .home main aside section .grid{
         display: grid;/* Grid trabaja con los dos ejes a la vez */
-        grid-template-columns: 49% 49%;
+        grid-template-columns: 48% 48%;
         grid-gap: 10px;
     }
 
@@ -116,5 +116,41 @@
 
 /* Desktop */
 @media(min-width:769px){
+    .home main{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .home main .prooducts_cards{
+        width: 74%;
+    }
+
+    .home aside{
+        width: 24%;
+        margin-top: 0;
+    }
+
+    .home aside section h2:first-child{
+        margin-top: 0px;
+    }
+
+    .home main aside section .grid{
+        display: block;
+    }
+
+    .home main aside section .grid article{
+        justify-content: flex-start;
+    }
+
+    .home main aside section .grid article p{
+        width: 50%;
+        text-align: start;
+    }
+
+    .home aside .publicidad .publicidad_img{
+        width: 100%;
+    }
 
 }
